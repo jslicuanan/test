@@ -1,2 +1,3 @@
 SELECT
-    'Hello'
+      'hello'
+    , 'world'
