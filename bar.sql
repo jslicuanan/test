@@ -30,11 +30,18 @@ WITH category AS (
                       'DO',
                       'LU',
                       'TC',
+                      'CM',
                       'BC',
                       'ST',
                       'NG',
                       'LP',
-                      'DT'
+                      'DT',
+                      'IO',
+                      'CB',
+                      'BD',
+                      'CDO',
+                      'DV',
+                      'GN'
     
                      )
 ), sku_cat_wh AS (
@@ -235,4 +242,3 @@ WITH category AS (
     JOIN days_covered AS dc ON dc.productid = scw.productid
                             AND dc.DaysCover >= 4
     ORDER BY pr.penetration_rank DESC
-
